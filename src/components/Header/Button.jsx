@@ -1,12 +1,12 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
-import { logout } from "../../redux/Signup/ActionCreator";
+import { logout } from "../../redux/Signup/ReducerAuth";
 
 const Buttons = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const currentUser = useSelector((state)=>state.currentUser)
+  const currentUser = useSelector((state)=>state.auth.currentUser)
   const handleLogout=()=>{
     dispatch(logout())
     navigate("/")

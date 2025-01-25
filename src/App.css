@@ -93,6 +93,7 @@ li.dropdown {
 }
 .dropdown-item {
   font-size: 18px;
+  cursor: pointer;
 }
 .dropdown-content p:hover {
   background-color: #fadfd5;
